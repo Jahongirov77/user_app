@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .site-container {
+    @apply mx-auto px-4; /* Markazlashtirish va chetlariga padding qo'shish */
+    max-width: 100%; /* Standart holatda 100% kenglik */
+  }
+
+  @screen sm {
+    .site-container {
+      max-width: 640px; /* Kichik ekranlar uchun */
+    }
+  }
+
+  @screen md {
+    .site-container {
+      max-width: 768px; /* O'rta ekranlar uchun */
+    }
+  }
+
+  @screen lg {
+    .site-container {
+      max-width: 1024px; /* Katta ekranlar uchun */
+    }
+  }
+
+  @screen xl {
+    .site-container {
+      max-width: 1280px; /* Juda katta ekranlar uchun */
+    }
+  }
+
+  @screen 2xl {
+    .site-container {
+      max-width: 1536px; /* 2xl ekranlar uchun */
+    }
+  }
+}
